@@ -13,10 +13,10 @@
 buttonPostMessage.addEventListener("click", e=>{
     fetch(apiBaseURL + "/api/posts", {
         method: "POST",
-        mode: "cors",
-        credentials: "same-origin",
-        cache: "no-cache",
-        header: {
+        // mode: "cors",
+        // credentials: "same-origin",
+        // cache: "no-cache",
+        headers: {
             accept: "application/json",
             "Content-type" : "application/json",
             Authorization: "Bearer " + localStorage.token
@@ -37,7 +37,11 @@ function getMessage(message){
         <div>
             <h1>${message.text}</h1>
             <div class=username">${message.username}</div>
+            <div class="createdAt">${message.createdAt}</div>
+            <div class="ID: ">${message._id}</div>
+            <div class="Likes">${message.likes.length}</div>
         </div>
+        <hr>
     `;
 }
 

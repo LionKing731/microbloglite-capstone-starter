@@ -39,6 +39,7 @@ function login (loginData) {
     return fetch(apiBaseURL + "/auth/login", options)
         .then(response => response.json())
         .then(loginData => {
+            debugger;
             if (loginData.message === "Invalid username or password") {
                 console.error(loginData)
                 // Here is where you might want to add an error notification 
