@@ -38,11 +38,14 @@ function getMessage(message){
             <h1>${message.text}</h1>
             <div class=username">${message.username}</div>
         </div>
-    `
+    `;
 }
 
 function showMessages (messages) {
-    
+    if(messages.hasOwnProperty("message")){
+        location = "/";
+        return;
+    }
     messagesOutput.innerHTML = messages.map(getMessage).join("");
 }
 
@@ -56,4 +59,6 @@ fetch(apiBaseURL + "/api/posts?limit=1000&offset=0", {
         location = "/";
     }
     return response.json()
-    }).then(showMessages)
+    }).then(data =>{
+        showMessages(data);
+    })
