@@ -1,7 +1,5 @@
-/* Global CSS for all pages */
 
 * {
-    /* Sizing helper: See Workbook 1b, page 2-33. */
     box-sizing: border-box;
 
     /* 
@@ -15,4 +13,8 @@
 
 :root {
     font-size: 1rem;
+}
+
+body{
+    background-color: #008F8C;
 }

@@ -34,14 +34,13 @@ buttonPostMessage.addEventListener("click", e=>{
 
 function getMessage(message){
     return `
-        <div>
-            <h1>${message.text}</h1>
-            <div class=username">${message.username}</div>
-            <div class="createdAt">${message.createdAt}</div>
-            <div class="ID: ">${message._id}</div>
-            <div class="Likes">${message.likes.length}</div>
+        <div id="user-cont" class="card">
+            <div class="card-body">
+                <h3 id="username" class="card-title">${message.username}</h3>
+                <h5 class="card-text">${message.text}</h5>
+            </div>    
         </div>
-        <hr>
+        
     `;
 }
 
