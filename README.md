@@ -1,5 +1,18 @@
 # Enjoy the Microblog Project and the MicroblogLite API!
 
-Don't forget to read the [*MicroblogLite* API docs](http://microbloglite.us-east-2.elasticbeanstalk.com/docs) and experiment with the API in *Postman!*
 
-Practice and experimentation provide experience, and experience provides confidence.
+# Home
+
+<img src="./ReadMe photos/HOME.png">
+
+# Register
+
+<img src="./ReadMe photos/REGISTER.png">
+
+# Posts
+
+<img src="./ReadMe photos/POSTS.png">
+
+# Profile
+
+<img src="./ReadMe photos/PROFILE.png">

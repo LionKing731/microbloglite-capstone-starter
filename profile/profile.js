@@ -1,9 +1,7 @@
 profilePost.addEventListener("click", e=>{
     fetch(apiBaseURL + "/api/posts", {
         method: "POST",
-        // mode: "cors",
-        // credentials: "same-origin",
-        // cache: "no-cache",
+
         headers: {
             accept: "application/json",
             "Content-type" : "application/json",

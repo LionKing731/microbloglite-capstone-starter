@@ -2,20 +2,11 @@
 
 "use strict";
 
-// curl -X 'POST' \
-//   'http://microbloglite.us-east-2.elasticbeanstalk.com/api/posts' \
-//   -H 'accept: application/json' \
-//   -H 'Content-Type: application/json' \
-//   -d '{
-//   "text": "string"
-// }'
 
 buttonPostMessage.addEventListener("click", e=>{
     fetch(apiBaseURL + "/api/posts", {
         method: "POST",
-        // mode: "cors",
-        // credentials: "same-origin",
-        // cache: "no-cache",
+ 
         headers: {
             accept: "application/json",
             "Content-type" : "application/json",
